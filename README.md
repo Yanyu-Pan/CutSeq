@@ -28,7 +28,7 @@ tttccccggggaaaacgcgcg
 ```
 #Run command
 ```
-sh CutSeq.sh -i ST123.fasta -keyword E.coli
+sh CutSeq.sh -i ST123.fasta -k E.coli
 ```
 #you will get CUT_OUT.fasta
 ```
