@@ -13,7 +13,10 @@ sh CutSeq.sh -i <input file> -keyword <your keyword>
 ### For example
 
 #Inputfile format
-```cat test.fasta```
+```
+cat test.fasta
+```
+```
 >E.coli 1
 aaattttccc
 tttgaaaaaa
@@ -21,14 +24,23 @@ tttgaaaaaa
 ttttaaagggaaacccccc
 >Listeria
 tttccccggggaaaacgcgcg
+```
 #Run command
-```sh CutSeq.sh -i ST123.fasta -keyword E.coli```
+```
+sh CutSeq.sh -i ST123.fasta -keyword E.coli
+```
 #you will get CUT_OUT.fasta
-```cat CUT_OUT.fasta```
+```
+cat CUT_OUT.fasta
+```
+```
 >E.coli 1
 aaattttccctttgaaaaaa
 >E.coli 99
 ttttaaagggaaacccccc
-:star: Each contig sequence will become a line in OUT_PUT.fasta, such as E.coli 1
+```
+:star: Each contig sequence will become a line in OUT_PUT.fasta, such as E.coli 1.
 If you want to display in multiple lines for easy visualization，you can:
-```seqkit seq test.fa -w 100```
+```
+seqkit seq test.fa -w 100
+```
